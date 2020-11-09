@@ -23,7 +23,5 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-add_lunch_combo omni_X505F-eng
+add_lunch_combo omni_X505X-eng
 #add_lunch_combo omni_X505F-userdebug
-
-
