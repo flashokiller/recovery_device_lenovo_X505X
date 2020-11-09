@@ -24,4 +24,4 @@
 # components.
 
 add_lunch_combo omni_X505X-eng
-#add_lunch_combo omni_X505F-userdebug
+#add_lunch_combo omni_X505X-userdebug
