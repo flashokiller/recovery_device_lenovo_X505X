@@ -16,16 +16,16 @@
 ALLOW_MISSING_DEPENDENCIES := true
 
 # Release name
-PRODUCT_RELEASE_NAME := X505F
+PRODUCT_RELEASE_NAME := X505X
 
 # inherit the usual stuff...
 $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common_tablet.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := omni_X505F
-PRODUCT_DEVICE := X505F
+PRODUCT_NAME := omni_X505X
+PRODUCT_DEVICE := X505X
 PRODUCT_BRAND := Lenovo
-PRODUCT_MODEL := Lenovo TB-X505F
+PRODUCT_MODEL := Lenovo TB-X505X
 PRODUCT_MANUFACTURER := LENOVO
 
