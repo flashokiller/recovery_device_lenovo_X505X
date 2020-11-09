@@ -45,22 +45,31 @@ TARGET_PREBUILT_KERNEL := device/lenovo/X505F/prebuilt/Image.gz-dtb
 
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
+BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_TAGS_OFFSET := 0x0000100
 BOARD_RAMDISK_OFFSET := 0x01000000
+BOARD_SECOND_OFFSET := 0x00f00000
 
-BOARD_KERNEL_CMDLINE := androidboot.console=ttyMSM0 
-BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom 
-BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237 
-BOARD_KERNEL_CMDLINE += ehci-hcd.park=3 
-BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 
-BOARD_KERNEL_CMDLINE += androidboot.bootdevice=7824900.sdhci 
-BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0x78B0000 
-BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image 
-BOARD_KERNEL_CMDLINE += androidboot.usbconfigfs=true 
-BOARD_KERNEL_CMDLINE += loop.max_part=7 
+BOARD_HASH_TYPE := sha1
+BOARD_OS_VERSION := 9.0.0
+BOARD_OS_PATCH_LEVEL := 2020-07
+BOARD_HEADER_VERSION := 1
+BOARD_HEADER_SIZE := 1648
+
+BOARD_KERNEL_CMDLINE := androidboot.console=ttyMSM0
+BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
+BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
+BOARD_KERNEL_CMDLINE += ehci-hcd.park=3
+BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
+BOARD_KERNEL_CMDLINE += androidboot.bootdevice=7824900.sdhci
+BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0x78B0000
+BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image
+BOARD_KERNEL_CMDLINE += androidboot.usbconfigfs=true
+BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_CMDLINE += print.devkmsg=on
 BOARD_KERNEL_CMDLINE += buildvariant=user
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 
 # kernel - touchscreen for recovery
 BOARD_KERNEL_CMDLINE += androidboot.goodixtp=gtp
@@ -121,4 +130,3 @@ TW_THEME := portrait_hdpi
 #TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.0"
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 200
-
