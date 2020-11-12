@@ -105,8 +105,8 @@ BOARD_ROOT_EXTRA_SYMLINKS := /vendor/firmware_mnt:/firmware
 
 
 #decryption
-TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_CRYPTO_FBE := true
+TW_INCLUDE_CRYPTO := false
+TW_INCLUDE_CRYPTO_FBE := false
 PLATFORM_SECURITY_PATCH := 2025-12-31
 
 # TWRP specific build flags
