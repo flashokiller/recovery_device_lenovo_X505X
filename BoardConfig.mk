@@ -130,3 +130,20 @@ TW_THEME := portrait_hdpi
 #TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.0"
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 200
+
+#SHRP_Variables
+SHRP_PATH := device/lenovo/X505X
+SHRP_MAINTAINER := flashokiller
+SHRP_DEVICE_CODE := X505X
+SHRP_EDL_MODE := 1
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usbotg
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A-Only
+SHRP_FLASH := 1
+#SHRP_FONP_1 := /sys/class/leds/led:torch_0/brightness
+#SHRP_FONP_2 := /sys/class/leds/led:torch_1/brightness
+#SHRP_FONP_3 := /sys/class/leds/led:switch/brightness
+#SHRP_FLASH_MAX_BRIGHTNESS := 200
